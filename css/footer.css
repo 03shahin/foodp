@@ -1,0 +1,58 @@
+.footer{
+    grid-column: 1 / -1;
+    margin: 1rem 0px;
+    border-top:1px solid black ;
+    background-color: whitesmoke;
+}
+.foooter-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px , 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 7px ;
+    padding: 35px ;
+}
+.copy{
+    margin-top: 1rem;
+    font-size: 12px;
+    text-align: center;
+}
+.copy-text ,.footer-title{
+    color: orange;
+}
+ul{
+    list-style:none ;
+}
+li{
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.5s;
+}
+li:hover{
+    color: orange;
+}
+.telegram{
+    transition: all 0.4s;
+}
+.telegram:hover{
+    color: rgb(15, 91, 206);
+}
+.whatsapp{
+    transition: all 0.4s;
+}
+.whatsapp:hover{
+    color: rgb(9, 156, 33);
+}
+.youtube{
+    transition: all 0.4s;
+}
+.youtube:hover{
+    color: rgb(156, 19, 19);
+}
+@media screen and (max-width:557px)  {
+    .foooter-section{
+        text-align: start;
+    }
+    
+}

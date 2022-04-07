@@ -1,0 +1,54 @@
+.gallery{
+    
+    grid-column: 1 / -1;
+}
+.gallery-section{
+    display: grid;
+    grid-template-columns:repeat(3 ,1fr) ;
+    grid-template-rows:repeat(3 , 280px) ;
+    grid-template-areas: "gallery-1 gallery-1 gallery-2" "gallery-3 gallery-4 gallery-2" "gallery-3 gallery-5 gallery-5" ;
+    padding: 20px 50px;
+    grid-gap: 1rem;
+}
+.imag-gallery{
+    width: 100%;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery1{
+    grid-area: gallery-1;
+    background-image: url(../Screenshot_20220407-172516_Pinterest.jpg);
+}
+.gallery2{
+    grid-area: gallery-2;
+    background-image: url(../ressss.jpg);
+}
+.gallery3{
+    grid-area: gallery-3;
+    background-image: url(../resturan.jpg);
+}
+.gallery4{
+    grid-area: gallery-4;
+    background-image: url(../Screenshot_20220407-172809_Pinterest.jpg);
+}
+.gallery5{
+    grid-area: gallery-5;
+    background-image: url(../Screenshot_20220407-172523_Pinterest.jpg);
+}
+@media screen and (max-width:1000px)  {
+               .gallery-section{
+                   grid-template-areas: "gallery-1 gallery-1 gallery-2" "gallery-3 gallery-4  gallery-4" "gallery-5 gallery-5 gallery-5";
+               }
+    
+}
+@media screen and (max-width:600px)  {
+    .gallery-section{
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(4 , 280px);
+        grid-template-areas: "gallery-1 gallery-1" "gallery-3 gallery-2" "gallery-4 gallery-4" "gallery-5 gallery-5";
+        
+    }
+
+}
